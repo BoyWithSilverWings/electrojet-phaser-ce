@@ -1,6 +1,5 @@
 {
   "parser": "babel-eslint",
-  "extends": "standard",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
@@ -16,5 +15,14 @@
   },
   "settings": {
     "import/core-modules": ["phaser", "pixi", "p2"]
-  }
+  },
+  "extends": [
+    "standard",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["src/**/*.js"]
+    }
+  ]
 }
