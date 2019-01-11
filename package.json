@@ -26,7 +26,7 @@
     "prettier": "^1.15.3"
   },
   "dependencies": {
-    "@electrojet/phaser-ce": "^0.0.6",
+    "@electrojet/phaser-ce": "^0.0.7",
     "cordova-android": "^7.1.1",
     "cordova-browser": "^5.0.4",
     "cordova-ios": "^4.5.5",
