@@ -668,10 +668,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@electrojet/core@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@electrojet/core/-/core-0.0.10.tgz#65cf38b1a200de1eefc942e4faba9a2166746fa0"
-  integrity sha512-GTGFpxrmVOcB99GSCUBoiofmGI8dZgxQg2xS4NFBCI0/PDq3iNyrY52KB1GFxw7rdvl0PJbhSsayusLyXF4FxA==
+"@electrojet/core@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@electrojet/core/-/core-0.1.1.tgz#ed3f43d019b2944bbfd6ec06fb18cd61683493bb"
+  integrity sha512-J+iTjEr6M/IazEcjumEIKRXu6RVL2W22FmIMVKlRE9tmdlZmkfmIfdVoRT1rmSqx1NO6YFNMHjiLmeu/7JFbaQ==
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/preset-env" "^7.2.3"
@@ -695,7 +695,7 @@
     optimize-css-assets-webpack-plugin "^5.0.1"
     ora "^3.0.0"
     style-loader "^0.23.1"
-    uglifyjs-webpack-plugin "^2.1.1"
+    terser-webpack-plugin "^1.2.1"
     webpack "^4.28.3"
     webpack-cli "^3.1.2"
     webpack-dev-server "^3.1.14"
@@ -703,12 +703,12 @@
     webpackbar "^3.1.4"
     which "^1.3.1"
 
-"@electrojet/phaser-ce@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@electrojet/phaser-ce/-/phaser-ce-0.0.1.tgz#806c5212bec835cfcd48971efb4c0cd5d49c1331"
-  integrity sha512-XjUqx0AJBfEQw259zlIP6IyKsd3iQrelH2zFzmHrbCUi40a5KJJpjbHA8ZP9oaE2qghc/d30mOXdt7ckSnpBRA==
+"@electrojet/phaser-ce@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@electrojet/phaser-ce/-/phaser-ce-0.0.5.tgz#865070539957dd3267c5726043fdcd2a612efc2b"
+  integrity sha512-9yGpHOkA98U0e97Ms88lFVl29AeuUms+Ix7yxc6tdZcVlvNPSMwH4kd3YtyW++CqLBzRV8Q3RFMAZu+Ux/Z6EA==
   dependencies:
-    "@electrojet/core" "^0.0.10"
+    "@electrojet/core" "^0.1.1"
     chalk "^2.4.1"
     cosmiconfig "^5.0.7"
     cross-spawn "^6.0.5"
@@ -2164,7 +2164,7 @@ cacache@^10.0.4:
     unique-filename "^1.1.0"
     y18n "^4.0.0"
 
-cacache@^11.0.2, cacache@^11.2.0:
+cacache@^11.0.2:
   version "11.3.2"
   resolved "https://registry.yarnpkg.com/cacache/-/cacache-11.3.2.tgz#2d81e308e3d258ca38125b676b98b2ac9ce69bfa"
   integrity sha512-E0zP4EPGDOaT2chM08Als91eYnf8Z+eH1awwwVsngUmgppfM5jjJ8l3z5vO5p5w/I3LsiXawb1sW0VY65pQABg==
@@ -9030,7 +9030,7 @@ term-size@^1.2.0:
   dependencies:
     execa "^0.7.0"
 
-terser-webpack-plugin@^1.1.0:
+terser-webpack-plugin@^1.1.0, terser-webpack-plugin@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-1.2.1.tgz#7545da9ae5f4f9ae6a0ac961eb46f5e7c845cc26"
   integrity sha512-GGSt+gbT0oKcMDmPx4SRSfJPE1XaN3kQRWG4ghxKQw9cn5G9x6aCKSsgYdvyM0na9NJ4Drv0RG6jbBByZ5CMjw==
@@ -9225,27 +9225,13 @@ typedarray@^0.0.6, typedarray@~0.0.5:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uglify-js@3.4.x, uglify-js@^3.0.0:
+uglify-js@3.4.x:
   version "3.4.9"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
   integrity sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
   dependencies:
     commander "~2.17.1"
     source-map "~0.6.1"
-
-uglifyjs-webpack-plugin@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-2.1.1.tgz#6937d7513a37280d4792f1fb536bef35e08e420a"
-  integrity sha512-TQEcyMNkObX/H+FfcKjiDgs5RcXX8vW2UUUrDTOfQgg3lrafztfeM5WAwXo+AzqozJK6NP9w98xNpG/dutzSsg==
-  dependencies:
-    cacache "^11.2.0"
-    find-cache-dir "^2.0.0"
-    schema-utils "^1.0.0"
-    serialize-javascript "^1.4.0"
-    source-map "^0.6.1"
-    uglify-js "^3.0.0"
-    webpack-sources "^1.1.0"
-    worker-farm "^1.5.2"
 
 umd@^3.0.0:
   version "3.0.3"
